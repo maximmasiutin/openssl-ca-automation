@@ -46,8 +46,7 @@ dir		= .			# Where everything is kept
 certs		= $dir			# Where the issued certs are kept
 crl_dir		= $dir			# Where the issued crl are kept
 database	= $dir\\index.bin	# database index file.
-unique_subject	= no			# Set to 'no' to allow creation of
-					# several certs with same subject.
+unique_subject	= yes			# Set to 'yes' to prevent duplicate subjects
 new_certs_dir	= $dir			# default place for new certs.
 
 certificate	= $dir\\rsa-ca-cert.cer	# The CA certificate
@@ -65,7 +64,7 @@ name_opt 	= ca_default		# Subject Name options
 cert_opt 	= ca_default		# Certificate field options
 
 # Extension copying option: use with caution.
-copy_extensions = copyall
+copy_extensions = copy
 
 # Extensions to add to a CRL. Note: Netscape communicator chokes on V2 CRLs
 # so this is commented out by default to leave a V1 CRL.

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# The Perl script to approve multiple Certificate Signing Requests (CRSs) using an OpenSSL-based Certification Authority (CA)
+# The Perl script to approve multiple Certificate Signing Requests (CSRs) using an OpenSSL-based Certification Authority (CA)
 # Version 1.0
 # Copyright 2021 Maxim Masiutin. All rights reserved.
 
